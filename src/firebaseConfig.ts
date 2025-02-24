@@ -10,10 +10,9 @@ const firebaseConfig = {
   messagingSenderId: "import.meta.env.VITE_MESSAGESENDERID",
   appId: "import.meta.env.VITE_APPID",
 };
-
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
+//const analytics = getAnalytics(app);
 export const auth = getAuth(app);
 export const db = getFirestore(app);
 
